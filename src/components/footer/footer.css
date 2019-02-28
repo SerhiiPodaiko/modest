@@ -1,0 +1,10 @@
+footer {
+    padding: 40px 0 25px 0;
+    background: #3a454d;
+}
+
+footer p {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    color: #fff;
+}

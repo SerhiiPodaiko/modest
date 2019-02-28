@@ -1,0 +1,101 @@
+.gallery {
+    margin-top: 40px;
+}
+
+.gallery img {
+    opacity: 0.6;
+}
+
+.gallery img:hover {
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.gallery img:hover ~ .quote {
+    background: #000;
+    transition: 0.7s;
+}
+
+.quote {
+    height: 75px;
+    background: #e1e6ea;
+    margin-bottom: 100px;
+}
+
+.quote h4 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: #292f36;
+    padding: 10px 0 0 20px;
+    text-transform: uppercase;
+}
+
+.quote p {
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    color: #8d8f92;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.social_icon {
+    display: flex;
+    left: 50%;
+    margin-left: -75px;
+    position: absolute;
+    width: 100%;
+    top: 125px;
+}
+
+.our-team h2:before {
+    content: "";
+    width: 10px;
+    height: 35px;
+    background: #4e5a62;
+    position: absolute;
+    left: 15px;
+}
+/*adaptive*/
+@media (max-width: 576px) {
+    .our-team {
+        margin-bottom: 100px;
+    }
+
+    .quote h4 {
+        font-size: 4vw;
+    }
+
+    .quote p {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 370px) {
+    .social_icon {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .quote h4 {
+        font-size: 2.2vw;
+    }
+
+    .quote p {
+        font-size: 1.1vw;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .quote h4 {
+        font-size: 2.1vw;
+    }
+
+    .quote p {
+        font-size: 1.5vw;
+    }
+
+    .social_icon {
+        display: none;
+    }
+}

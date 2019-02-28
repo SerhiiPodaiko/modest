@@ -1,0 +1,33 @@
+.services .col-md-3 {
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+.services h4 {
+    font-size: 17px;
+    color: #292f36;
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+    padding: 35px 0 20px 0;
+}
+
+.services p {
+    font-size: 16px;
+    color: #8d8f92;
+}
+
+
+.services h2:before {
+    content: "";
+    width: 10px;
+    height: 35px;
+    background: #4e5a62;
+    position: absolute;
+    left: 15px;
+}
+/*adaptive*/
+@media (max-width: 576px) {
+    .services {
+        height: 100%;
+    }
+}

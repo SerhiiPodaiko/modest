@@ -1,0 +1,91 @@
+.work h2:before {
+    content: "";
+    width: 10px;
+    height: 35px;
+    background: #4e5a62;
+    position: absolute;
+    left: 15px;
+}
+
+.work {
+    background: #3a454d;
+}
+
+.partner {
+    background: #292f36;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    padding: 20px 0 0 20px;
+    height: auto;
+}
+
+.work a {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block;
+    padding: 15px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 60px 0 60px 0;
+}
+
+.work a:hover {
+    border-right: none;
+    border-left: none;
+    transition: 0.5s;
+}
+
+.hide:hover {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0.4;
+}
+/*adaptive*/
+@media (max-width: 576px) {
+    .partner {
+        display: none;
+    }
+
+
+    .hide {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .partner {
+        display: none;
+    }
+
+    .hide {
+        width: 100%;
+    }
+
+    .work a {
+        display: none;
+    }
+
+    .last_m {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .work a {
+        display: none;
+    }
+
+    .last_m {
+        margin-bottom: 50px;
+    }
+}
