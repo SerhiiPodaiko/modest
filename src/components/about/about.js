@@ -5,6 +5,7 @@ import twitter from  '../../imgs/about/twitter.png';
 import google from  '../../imgs/about/google.png';
 import linkedin from  '../../imgs/about/linkedin.png';
 import be from  '../../imgs/about/be.png';
+import WOW from "wowjs";
 
 export {
     styleTitle
@@ -22,6 +23,10 @@ const styleTitle = {
 
 export default class About extends Component {
 
+    componentDidMount(){
+        new WOW.WOW().init();
+    }
+
     render(){
         return (
             <div className="about">
@@ -29,24 +34,24 @@ export default class About extends Component {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="about_title">
-                                <h2 style={styleTitle}>WE ARE MODEST</h2>
+                                <h2 className="wow bounceInLeft" style={styleTitle}>WE ARE MODEST</h2>
                             </div>
                         </div>
                         <div className="col-md-7">
-                            <div className="left_block_about">
+                            <div className="left_block_about wow bounceInLeft">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum  quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at. </p>
                                 <p>Phasellus sollicitudin ante eros ornare, sit amet luctus lorem semper. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum</p>
                             </div>
-                            <div className="social-icon">
-                                <img className="img-fluid" src={facebook} alt="facebook"/>
-                                <img className="img-fluid" src={twitter} alt="twitter"/>
-                                <img className="img-fluid" src={google} alt="google"/>
-                                <img className="img-fluid" src={linkedin} alt="linkedin"/>
-                                <img className="img-fluid" src={be} alt="be"/>
+                            <div className="social-icon wow bounceInUp">
+                                <img className="img-fluid wow bounceInLeft delay-2s" src={facebook} alt="facebook"/>
+                                <img className="img-fluid wow bounceInLeft delay-1s" src={twitter} alt="twitter"/>
+                                <img className="img-fluid wow zoomIn delay-1s" src={google} alt="google"/>
+                                <img className="img-fluid wow bounceInRight delay-1s" src={linkedin} alt="linkedin"/>
+                                <img className="img-fluid wow bounceInRight delay-2s" src={be} alt="be"/>
                             </div>
                         </div>
                         <div className="col-md-5">
-                            <div className="right_block_about">
+                            <div className="right_block_about wow bounceInRight">
                                 <div className="inner_right_block_about">
                                     <h3>Dedication to the customers</h3>
                                     <p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus</p>

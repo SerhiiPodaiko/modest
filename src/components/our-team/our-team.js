@@ -8,8 +8,13 @@ import delores from  '../../imgs/our-team/delores.png';
 import facebook from '../../imgs/our-team/facebook.png';
 import twitter from  '../../imgs/our-team/twitter.png';
 import linkedin from  '../../imgs/our-team/linkedin.png';
+import WOW from "wowjs";
 
 export default class Ourteam extends Component {
+
+    componentDidMount(){
+        new WOW.WOW().init();
+    }
 
     render(){
         return (
@@ -17,18 +22,18 @@ export default class Ourteam extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h2 style={styleTitle}>meet the team.</h2>
+                            <h2 className="wow bounceInLeft" style={styleTitle}>meet the team.</h2>
                         </div>
                         <div className="col-md-12">
                             <div className="gallery">
                                 <div className="row">
-                                    <div className="col-md-3 col-sm-3 col-6 inner_gallery"><img className="img-fluid" src={gloria} alt=""/>
+                                    <div className="col-md-3 col-sm-3 col-6 inner_gallery wow bounceInLeft"><img className="img-fluid" src={gloria} alt=""/>
                                         <div className="quote">
                                             <h4>Gloria Bromley</h4>
                                             <p>CEO and Founder</p>
                                         </div>
                                     </div>
-                                    <div className="col-md-3 col-sm-3 col-6 inner_gallery"><img className="img-fluid" src={paul} alt=""/>
+                                    <div className="col-md-3 col-sm-3 col-6 inner_gallery wow bounceInDown"><img className="img-fluid" src={paul} alt=""/>
                                         <div className="quote">
                                             <h4>Paul Torres</h4>
                                             <p>Head of Development</p>
@@ -39,13 +44,13 @@ export default class Ourteam extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-3 col-sm-3 col-6 inner_gallery"><img className="img-fluid" src={jutith} alt=""/>
+                                    <div className="col-md-3 col-sm-3 col-6 inner_gallery wow bounceInUp"><img className="img-fluid" src={jutith} alt=""/>
                                         <div className="quote">
                                             <h4>Judith Gillette</h4>
                                             <p>Graphic Desinger</p>
                                         </div>
                                     </div>
-                                    <div className="col-md-3 col-sm-3 col-6 inner_gallery"><img className="img-fluid" src={delores} alt=""/>
+                                    <div className="col-md-3 col-sm-3 col-6 inner_gallery wow bounceInRight "><img className="img-fluid" src={delores} alt=""/>
                                         <div className="quote">
                                             <h4>Delores Reed</h4>
                                             <p>Client Service Director</p>
